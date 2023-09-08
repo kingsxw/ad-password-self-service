@@ -8,7 +8,6 @@ from traceback import format_exc
 from pwdselfservice.settings import BASE_DIR
 from pprint import pformat as cformat
 
-
 NOT_CHECK_CALL_FUNC_NAME = []
 
 DEBUG_FLAG_FILE_PATH = os.path.join(BASE_DIR, '/log')
@@ -53,7 +52,7 @@ class TraceFuncContext:
     def get_callbacks(self, frame, event, arg=None):
         self.check_debug_flag()
         __co_name = frame.f_code.co_name
-        if event != 'call':    # Only trace call
+        if event != 'call':  # Only trace call
             return
         if self.verbose:
             if self.verbose == 1 or self.verbose == 'v':
@@ -145,5 +144,7 @@ def decorator_logger(logger, log_head='Run function', debug_flag_name=None, verb
                             func.__name__, args, kwargs, func_consts, log_head))
                     logger.error(format_exc())
                     raise e
+
         return wrapper
+
     return decorator

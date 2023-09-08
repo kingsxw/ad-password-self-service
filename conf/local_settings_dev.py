@@ -5,21 +5,21 @@
 
 # ########## AD配置，修改为自己的
 # AD主机，可以是IP或主机域名，例如可以是: abc.com或172.16.122.1
-LDAP_HOST = r'修改成自己的'
+LDAP_HOST = r'sumpay.local'
 
 # AD域控的DOMAIN，例如：比如你的域名是abc.com，那么这里的LDAP_DOMAIN就是：abc
 # NTLM认证必须是domain\username
-LDAP_DOMAIN = r'修改成自己的'
+LDAP_DOMAIN = r'sumpay'
 
 # 用于登录AD做用户信息处理的账号，需要有修改用户账号密码或信息的权限。
 # AD账号，例如：pwdadmin
-LDAP_LOGIN_USER = r'修改成自己的'
+LDAP_LOGIN_USER = r'sspr'
 # 密码
-LDAP_LOGIN_USER_PWD = r'修改为自己的'
+LDAP_LOGIN_USER_PWD = r'Aefee5ahf=aihah3Ahvizoomoh%cho'
 
 # BASE DN，账号的查找DN路径，例如：'DC=abc,DC=com'，可以指定到OU之下，例如：'OU=RD,DC=abc,DC=com'。
 # BASE_DN限制得越细，搜索用户的目录也就越小，一般情况下可以通过SEARCH_FILTER来过滤
-BASE_DN = r'修改成自己的'
+BASE_DN = r'OU=商盟商务服务有限公司,DC=sumpay,DC=local'
 
 # ldap的search_filter，如果需要修改，请保持用户账号部分为 点位符{0} (代码中通过占位符引入账号)
 # 例如，AD的用户账号属性是sAMAccountName，那么匹配的账号请配置成sAMAccountName={0}
@@ -39,20 +39,20 @@ LDAP_CONN_PORT = 636
 # 验证的类型
 #       钉钉 / 企业微信，自行修改
 # 值是：DING /  WEWORK
-INTEGRATION_APP_TYPE = 'WEWORK'
+INTEGRATION_APP_TYPE = 'DING'
 
 # ########## 钉钉 《如果不使用钉钉，可不用配置》##########
 # 钉钉企业ID <CorpId>，修改为自己的
-DING_CORP_ID = '修改为自己的'
+DING_CORP_ID = 'ding1a47b925a429ca7b'
 
 # 钉钉企业内部开发，内部H5微应用或小程序，用于读取企业内部用户信息
-DING_AGENT_ID = r'修改为自己的'
-DING_APP_KEY = r'修改为自己的'
-DING_APP_SECRET = r'修改为自己的'
+DING_AGENT_ID = r'2053896468'
+DING_APP_KEY = r'dingmxqigf6thuw5axuf'
+DING_APP_SECRET = r'wv8uXsGH46oqcXMqoQCxwVnnDM5RihRF6dzvaYB_gL6S6c0KFM_e_qfjPhEt5DPt'
 
 # 移动应用接入 主要为了实现通过扫码拿到用户的unionid
-DING_MO_APP_ID = r'修改为自己的'
-DING_MO_APP_SECRET = r'修改为自己的'
+DING_MO_APP_ID = r'dingmxqigf6thuw5axuf'
+DING_MO_APP_SECRET = r'wv8uXsGH46oqcXMqoQCxwVnnDM5RihRF6dzvaYB_gL6S6c0KFM_e_qfjPhEt5DPt'
 
 
 # ####### 企业微信《如果不使用企业微信，可不用配置》 ##########
@@ -65,10 +65,12 @@ WEWORK_AGNET_SECRET = r'修改为自己的'
 
 # 主页域名，钉钉跳转等需要指定域名，格式：pwd.abc.com。
 # 如果是自定义安装，请修改成自己的域名
-HOME_URL = 'PWD_SELF_SERVICE_DOMAIN'
+HOME_URL = 'sspr1.sumpay.local'
 # 平台显示的标题
 TITLE = 'Self-Service'
 
 # ####### Redis ##########
 REDIS_LOCATION = r'127.0.0.1:6379'
-REDIS_PASSWORD = r'PWD_SELF_REDIS_PASSWORD'
+REDIS_PASSWORD = r'b3BzLWFuN3Rlc3QtMjM0LnN1'
+
+# PWD_SELF_SERVICE_HOME = r'/tmp/pycharm_project_81/'

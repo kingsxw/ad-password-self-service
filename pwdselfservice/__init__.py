@@ -19,4 +19,3 @@ except Exception as e:
     logger.error("Redis无法连接，请排查Redis配置...")
     logger.error("{}".format(traceback.format_exc()))
     sys.exit(1)
-

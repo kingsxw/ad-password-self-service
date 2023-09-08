@@ -13,7 +13,7 @@ a:link {
 }
 
 a:hover {
-    cursor:pointer;
+    cursor: pointer;
 }
 
 .a-middle-text {
@@ -34,6 +34,7 @@ a:hover {
     font-weight: bold;
     text-align: center;
 }
+
 .middle-header-title {
     margin-top: 30px;
     line-height: 50px;

@@ -9,6 +9,15 @@
 import re
 
 
+def get_mobile_from_userinfo(user_info):
+    if user_info.get('mobile') not in ['', None]:
+        return True, user_info.get('mobile')
+    elif user_info.get('telephone') not in ['', None]:
+        return True, user_info.get('telephone')
+    else:
+        return False, "当前用户的手机或电话号码均没配置，请先完善个人信息！"
+
+
 def get_email_from_userinfo(user_info):
     if user_info.get('email') not in ['', None]:
         return True, user_info.get('email')
@@ -39,7 +48,8 @@ def format2username(account):
         else:
             return True, account.lower()
     except Exception as e:
-        return False, NameError("格式化失败，注意：account用户账号是邮箱或DOMAIN\\username或username格式，错误信息[{}]".format(account, e))
+        return False, NameError(
+            "格式化失败，注意：account用户账号是邮箱或DOMAIN\\username或username格式，错误信息[{}]".format(account, e))
 
 
 def get_user_is_active(user_info):
@@ -50,4 +60,3 @@ def get_user_is_active(user_info):
 
     except (KeyError, IndexError) as k_error:
         return False, 'get_user_is_active: %s' % str(k_error)
-

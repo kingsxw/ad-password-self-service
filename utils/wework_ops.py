@@ -17,7 +17,7 @@ APP_ENV = os.getenv('APP_ENV')
 if APP_ENV == 'dev':
     from conf.local_settings_dev import *
 else:
-    from conf.local_settings import *
+    from conf.local_settings_dev import *
 
 CORP_API_TYPE = {
     'GET_USER_TICKET_OAUTH2': ['/cgi-bin/auth/getuserinfo?access_token=ACCESS_TOKEN', 'GET'],

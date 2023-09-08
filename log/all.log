@@ -1,0 +1,371 @@
+2023-09-08 17:01:02,826 __init__ INFO -140338886993728- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:01:03,596 __init__ INFO -140479912941376- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:01:03,803 autoreload INFO -140479912941376- Watching for file changes with StatReloader
+2023-09-08 17:01:08,648 tracecalls INFO -140479580522240- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:01:08,648 tracecalls INFO -140479580522240- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:01:08,649 tracecalls INFO -140479580522240- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:01:08,649 tracecalls INFO -140479580522240- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:01:08,649 tracecalls INFO -140479580522240- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:01:08,672 tracecalls INFO -140479580522240- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:01:08,698 log WARNING -140479580522240- Not Found: /static/layui/css/layui.css
+2023-09-08 17:01:08,701 log WARNING -140479572129536- Not Found: /static/css/style.css
+2023-09-08 17:01:08,704 log WARNING -140479563736832- Not Found: /static/js/dingtalk.open.js
+2023-09-08 17:01:08,707 log WARNING -140479555344128- Not Found: /static/layui/layui.js
+2023-09-08 17:01:08,780 log WARNING -140479580522240- Not Found: /static/layui/layui.js
+2023-09-08 17:02:39,291 autoreload INFO -140479912941376- /sumpay/ad-password-self-service/pwdselfservice/settings.py changed, reloading.
+2023-09-08 17:02:40,032 __init__ INFO -139860925880128- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:02:40,231 autoreload INFO -139860925880128- Watching for file changes with StatReloader
+2023-09-08 17:02:44,515 __init__ INFO -140576219617088- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:02:45,264 __init__ INFO -140299048630080- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:02:45,469 autoreload INFO -140299048630080- Watching for file changes with StatReloader
+2023-09-08 17:02:50,063 tracecalls INFO -140298716018432- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:02:50,063 tracecalls INFO -140298716018432- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:02:50,064 tracecalls INFO -140298716018432- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:02:50,064 tracecalls INFO -140298716018432- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:02:50,064 tracecalls INFO -140298716018432- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:02:50,086 tracecalls INFO -140298716018432- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:02:50,103 log WARNING -140298716018432- Not Found: /static/layui/css/layui.css
+2023-09-08 17:02:50,105 log WARNING -140298706577152- Not Found: /static/css/style.css
+2023-09-08 17:02:50,109 log WARNING -140298698184448- Not Found: /static/js/dingtalk.open.js
+2023-09-08 17:02:50,112 log WARNING -140298689791744- Not Found: /static/layui/layui.js
+2023-09-08 17:02:50,182 log WARNING -140298716018432- Not Found: /static/layui/layui.js
+2023-09-08 17:02:51,757 tracecalls INFO -140298716018432- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:02:51,757 tracecalls INFO -140298716018432- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:02:51,757 tracecalls INFO -140298716018432- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:02:51,758 tracecalls INFO -140298716018432- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:02:51,758 tracecalls INFO -140298716018432- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:02:51,762 tracecalls INFO -140298716018432- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:02:51,781 log WARNING -140298716018432- Not Found: /static/layui/css/layui.css
+2023-09-08 17:02:51,786 log WARNING -140298706577152- Not Found: /static/css/style.css
+2023-09-08 17:02:51,787 log WARNING -140298698184448- Not Found: /static/js/dingtalk.open.js
+2023-09-08 17:02:51,789 log WARNING -140298689791744- Not Found: /static/layui/layui.js
+2023-09-08 17:02:51,869 log WARNING -140298716018432- Not Found: /static/layui/layui.js
+2023-09-08 17:02:51,930 log WARNING -140298716018432- Not Found: /static/layui/layui.js
+2023-09-08 17:03:44,701 __init__ INFO -140613762774848- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:03:45,458 __init__ INFO -139664595031872- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:03:45,660 autoreload INFO -139664595031872- Watching for file changes with StatReloader
+2023-09-08 17:04:41,951 __init__ INFO -139859712640832- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:04:42,696 __init__ INFO -140048821311296- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:04:42,902 autoreload INFO -140048821311296- Watching for file changes with StatReloader
+2023-09-08 17:04:45,693 tracecalls INFO -140048481646336- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:04:45,693 tracecalls INFO -140048481646336- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:04:45,694 tracecalls INFO -140048481646336- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:04:45,694 tracecalls INFO -140048481646336- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:04:45,694 tracecalls INFO -140048481646336- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:04:45,717 tracecalls INFO -140048481646336- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:04:45,737 log WARNING -140048481646336- Not Found: /static/layui/css/layui.css
+2023-09-08 17:04:45,740 log WARNING -140048473253632- Not Found: /static/css/style.css
+2023-09-08 17:04:45,743 log WARNING -140048464860928- Not Found: /static/js/dingtalk.open.js
+2023-09-08 17:04:45,746 log WARNING -140048456468224- Not Found: /static/layui/layui.js
+2023-09-08 17:04:45,808 log WARNING -140048481646336- Not Found: /static/layui/layui.js
+2023-09-08 17:10:53,726 tracecalls INFO -140048481646336- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:10:53,727 tracecalls INFO -140048481646336- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:10:53,728 tracecalls INFO -140048481646336- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:10:53,728 tracecalls INFO -140048481646336- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:10:53,728 tracecalls INFO -140048481646336- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:10:53,732 tracecalls INFO -140048481646336- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:11:05,929 tracecalls INFO -140048481646336- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:11:05,929 tracecalls INFO -140048481646336- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:11:05,930 tracecalls INFO -140048481646336- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:11:05,930 tracecalls INFO -140048481646336- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:11:05,930 tracecalls INFO -140048481646336- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:11:05,934 tracecalls INFO -140048481646336- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:13:14,046 tracecalls INFO -140048481646336- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:13:14,047 tracecalls INFO -140048481646336- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:13:14,047 tracecalls INFO -140048481646336- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:13:14,047 tracecalls INFO -140048481646336- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:13:14,048 tracecalls INFO -140048481646336- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:13:14,054 tracecalls INFO -140048481646336- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:13:28,686 tracecalls INFO -140048481646336- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:13:28,686 tracecalls INFO -140048481646336- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:13:28,687 tracecalls INFO -140048481646336- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:13:28,687 tracecalls INFO -140048481646336- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:13:28,687 tracecalls INFO -140048481646336- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:13:28,691 tracecalls INFO -140048481646336- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:42,936 tracecalls INFO -140048481646336- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:14:42,936 tracecalls INFO -140048481646336- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:14:42,937 tracecalls INFO -140048481646336- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:42,937 tracecalls INFO -140048481646336- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:42,937 tracecalls INFO -140048481646336- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:42,941 tracecalls INFO -140048481646336- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:50,961 tracecalls INFO -140048481646336- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:14:50,961 tracecalls INFO -140048481646336- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:14:50,962 tracecalls INFO -140048481646336- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:50,962 tracecalls INFO -140048481646336- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:50,962 tracecalls INFO -140048481646336- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:50,966 tracecalls INFO -140048481646336- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:50,993 log WARNING -140048481646336- Not Found: /static/layui/css/layui.css
+2023-09-08 17:14:50,996 log WARNING -140048464860928- Not Found: /static/css/style.css
+2023-09-08 17:14:50,999 log WARNING -140048456468224- Not Found: /static/js/dingtalk.open.js
+2023-09-08 17:14:51,001 log WARNING -140048473253632- Not Found: /static/layui/layui.js
+2023-09-08 17:14:51,075 log WARNING -140048481646336- Not Found: /static/layui/layui.js
+2023-09-08 17:14:55,024 tracecalls INFO -140048448075520- Request [index] trace detail --- line 66, locals as following: 
+{'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:14:55,025 tracecalls INFO -140048448075520- Request [index] trace detail --- line 67, locals as following: 
+{'home_url': 'http://sspr1.sumpay.local', 'request': <WSGIRequest: GET '/'>}
+
+2023-09-08 17:14:55,025 tracecalls INFO -140048448075520- Request [index] trace detail --- line 68, locals as following: 
+{ 'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:55,025 tracecalls INFO -140048448075520- Request [index] trace detail --- line 70, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:55,025 tracecalls INFO -140048448075520- Request [index] trace detail --- line 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:14:55,029 tracecalls INFO -140048448075520- Request [index] trace detail --- return 71, locals as following: 
+{ 'global_title': 'Self-Service',
+  'home_url': 'http://sspr1.sumpay.local',
+  'request': <WSGIRequest: GET '/'>,
+  'scan_app': '钉钉'}
+
+2023-09-08 17:18:51,838 autoreload INFO -140048821311296- /sumpay/ad-password-self-service/templates/navi.html changed, reloading.
+2023-09-08 17:18:52,589 __init__ INFO -140151972366144- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:18:52,792 autoreload INFO -140151972366144- Watching for file changes with StatReloader
+2023-09-08 17:19:17,277 log WARNING -140151707645696- Not Found: /navi
+2023-09-08 17:19:20,909 log WARNING -140151707645696- Not Found: /navi.html
+2023-09-08 17:20:31,187 autoreload INFO -140151972366144- /sumpay/ad-password-self-service/templates/navi.html changed, reloading.
+2023-09-08 17:20:32,266 __init__ INFO -139678951016256- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:20:32,460 autoreload INFO -139678951016256- Watching for file changes with StatReloader
+2023-09-08 17:20:47,251 autoreload INFO -139678951016256- /sumpay/ad-password-self-service/pwdselfservice/settings.py changed, reloading.
+2023-09-08 17:20:48,069 __init__ INFO -140596579301184- Redis连接成功，set/get/delete测试通过...
+2023-09-08 17:20:48,267 autoreload INFO -140596579301184- Watching for file changes with StatReloader

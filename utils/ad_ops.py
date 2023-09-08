@@ -11,7 +11,7 @@ APP_ENV = os.getenv('APP_ENV')
 if APP_ENV == 'dev':
     from conf.local_settings_dev import *
 else:
-    from conf.local_settings import *
+    from conf.local_settings_dev import *
 
 logger = logging.getLogger(__name__)
 
@@ -41,7 +41,8 @@ unicodePwd 属性的语法为 octet-string;但是，目录服务预期八进制�
 
 class AdOps(object):
 
-    def __init__(self, auto_bind=True, use_ssl=LDAP_USE_SSL, port=LDAP_CONN_PORT, domain=LDAP_DOMAIN, user=LDAP_LOGIN_USER,
+    def __init__(self, auto_bind=True, use_ssl=LDAP_USE_SSL, port=LDAP_CONN_PORT, domain=LDAP_DOMAIN,
+                 user=LDAP_LOGIN_USER,
                  password=LDAP_LOGIN_USER_PWD,
                  authentication=NTLM):
         """
@@ -63,7 +64,8 @@ class AdOps(object):
     def __server(self):
         if self.server is None:
             try:
-                self.server = Server(host='%s' % LDAP_HOST, connect_timeout=1, use_ssl=self.use_ssl, port=self.port, get_info=ALL)
+                self.server = Server(host='%s' % LDAP_HOST, connect_timeout=1, use_ssl=self.use_ssl, port=self.port,
+                                     get_info=ALL)
             except LDAPInvalidCredentialsResult as lic_e:
                 return False, LDAPOperationResult("LDAPInvalidCredentialsResult: " + str(lic_e.message))
             except LDAPOperationResult as lo_e:
@@ -157,8 +159,10 @@ class AdOps(object):
                              attributes=['distinguishedName'])
             return True, str(self.conn.entries[0]['distinguishedName'])
         except IndexError:
-            logger.error("AdOps Exception: Connect.search未能检索到任何信息，当前账号可能被排除在<SEARCH_FILTER>之外，请联系管理员处理。")
-            logger.error("self.conn.search(BASE_DN, {}, attributes=['distinguishedName'])".format(SEARCH_FILTER.format(username)))
+            logger.error(
+                "AdOps Exception: Connect.search未能检索到任何信息，当前账号可能被排除在<SEARCH_FILTER>之外，请联系管理员处理。")
+            logger.error("self.conn.search(BASE_DN, {}, attributes=['distinguishedName'])".format(
+                SEARCH_FILTER.format(username)))
             return False, "AdOps Exception: Connect.search未能检索到任何信息，当前账号可能被排除在<SEARCH_FILTER>之外，请联系管理员处理。"
         except Exception as e:
             logger.error("AdOps Exception: {}".format(e))
@@ -176,9 +180,32 @@ class AdOps(object):
             self.conn.search(BASE_DN, SEARCH_FILTER.format(username), attributes=['userAccountControl'])
             return True, self.conn.entries[0]['userAccountControl']
         except IndexError:
-            logger.error("AdOps Exception: Connect.search未能检索到任何信息，当前账号可能被排除在<SEARCH_FILTER>之外，请联系管理员处理。")
-            logger.error("self.conn.search({}, {}, attributes=['userAccountControl'])".format(BASE_DN, SEARCH_FILTER.format(username)))
+            logger.error(
+                "AdOps Exception: Connect.search未能检索到任何信息，当前账号可能被排除在<SEARCH_FILTER>之外，请联系管理员处理。")
+            logger.error("self.conn.search({}, {}, attributes=['userAccountControl'])".format(BASE_DN,
+                                                                                              SEARCH_FILTER.format(
+                                                                                                  username)))
             logger.info("self.conn.entries -- {}".format(self.conn.entries))
+            return False, "AdOps Exception: Connect.search未能检索到任何信息，当前账号可能被排除在<SEARCH_FILTER>之外，请联系管理员处理。"
+        except Exception as e:
+            logger.error("AdOps Exception: {}".format(e))
+            return False, "AdOps Exception: {}".format(e)
+
+    @decorator_logger(logger, log_head='AdOps', pretty=True, indent=2, verbose=1)
+    def ad_get_user_account_by_telephonenumber(self, mobile):
+        """
+        通过telephonenumber查询某个用户的username
+        :param telephonenumber:
+        :return: user_account
+        """
+        try:
+            self.__conn()
+            self.conn.search(BASE_DN, '(&(objectclass=user)(telephoneNumber={}))'.format(mobile),
+                             attributes=['sAMAccountName'])
+            return True, str(self.conn.entries[0]['sAMAccountName'])
+        except IndexError:
+            logger.error("AdOps Exception: Connect.search未能检索到任何信息，当前账号可能被排除在<SEARCH_FILTER>之外，请联系管理员处理。")
+            logger.error("self.conn.search(BASE_DN, {}, attributes=['sAMAccountName'])".format('(&(objectclass=user)(telephoneNumber={}))'.format(mobile)))
             return False, "AdOps Exception: Connect.search未能检索到任何信息，当前账号可能被排除在<SEARCH_FILTER>之外，请联系管理员处理。"
         except Exception as e:
             logger.error("AdOps Exception: {}".format(e))

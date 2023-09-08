@@ -8,7 +8,7 @@ if APP_ENV == 'dev':
     from conf.local_settings_dev import REDIS_LOCATION, REDIS_PASSWORD
 else:
     DEBUG = False
-    from conf.local_settings import REDIS_LOCATION, REDIS_PASSWORD
+    from conf.local_settings_dev import REDIS_LOCATION, REDIS_PASSWORD
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -67,7 +67,6 @@ logging.config.dictConfig({
     },
 })
 
-
 INSTALLED_APPS = [
     'django.contrib.contenttypes',
     'django.contrib.sessions',
@@ -75,7 +74,6 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'resetpwd',
 ]
-
 
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',

@@ -348,7 +348,7 @@ if [[ ! -f "${CWD}/.status/.pip3.Done" ]]; then
     echo "部署pip依赖 ..."
     ${PYTHON_VENV_DIR}/bin/pip3 install --upgrade pip
     ${PYTHON_VENV_DIR}/bin/pip3 install wheel setuptools
-    ${PYTHON_VENV_DIR}/bin/pip3 install -r ${CWD}/requirement
+    ${PYTHON_VENV_DIR}/bin/pip3 install -r ${CWD}/requirements.txt
     if [[ $? -eq 0 ]]; then
         touch ${CWD}/.status/.pip3.Done
         echo "Pip3 Requirement 安装成功 ..."
