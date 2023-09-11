@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block paneltitle %}功能导航{% endblock %}
+{% block middleblock %}
+
+<head>
+    <style>
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            /* Add this line */
+        }
+
+        .layui-btn {
+            font-size: 20px;
+            padding: 10px 16px;
+            width: 100%;
+            /* Add this line */
+            text-align: center;
+            /* Add this line */
+        }
+
+        .green-btn {
+            background-color: green;
+        }
+
+        .red-btn {
+            background-color: red;
+        }
+
+        .yellow-btn {
+            background-color: yellow;
+        }
+
+        @media (max-width: 600px) {
+            .container {
+                flex-direction: row;
+                flex-wrap: wrap;
+            }
+        }
+
+        @keyframes color-change {
+            0% {
+                background-color: red;
+            }
+
+            25% {
+                background-color: yellow;
+            }
+
+            50% {
+                background-color: blue;
+            }
+
+            75% {
+                background-color: green;
+            }
+
+            100% {
+                background-color: red;
+            }
+        }
+
+        .animated-btn {
+            animation-name: color-change;
+            animation-duration: 2s;
+            animation-iteration-count: infinite;
+        }
+    </style>
+
+    <h1 style="text-align:center; color:white;">商盟密码自助平台</h1>
+
+
+</head>
+
+<body>
+
+<div class="layui-btn-container">
+    <a href="/unlockAccount?code={{ code }}&username={{ username }}">
+        <button class="layui-btn green-btn animated-btn">账号解锁</button>
+    </a>
+    <a href="/">
+        <button class="layui-btn red-btn animated-btn">密码修改</button>
+    </a>
+    <a href="/auth">
+        <button class="layui-btn yellow-btn animated-btn">密码重置</button>
+    </a>
+</div>
+
+<blockquote class="layui-elem-quote layui-quote-nm">
+
+    [<i class="layui-icon layui-icon-refresh-3"></i>
+    注意！]如果有当弹出提示<b>是否同意授权</b>时，请务必<b>全部同意</b>，否则无法获取关键信息，导致无法正常使用重置密码/解锁账号！
+</blockquote>
+
+<script>
+    // Initialize the layui framework
+    layui.use('element', function () {
+        var element = layui.element;
+    });
+</script>
+</body>
+
+{% endblock %}
+{% block middleblockfoot %}
+<blockquote class="layui-elem-quote layui-quote-nm">
+    注意！如果有当弹出提示<b>是否同意授权</b>时，请务必<b>全部同意</b>，否则无法获取关键信息，导致无法正常使用重置密码/解锁账号！
+    <p>会话有效期5分钟</p>
+</blockquote>
+{% endblock %}

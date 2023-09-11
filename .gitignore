@@ -10,3 +10,5 @@ codeStyles
 inspectionProfiles
 deployment.xml
 encodings.xml
+/conf/local_settings_dev.py
+/conf/local_settings.py.sample
